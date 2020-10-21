@@ -1,0 +1,61 @@
+
+body {
+  font-family: "Montserrat";
+}
+
+#title {
+  background-color: #D4AF37;
+  color: #fff;
+}
+
+.headingDreamWand {
+  font-family: 'Montserrat-Black';
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.container-fluidhaha {
+  padding: 3% 15%;
+}
+
+.dream-wand {
+  margin-top: 10%;
+  margin-bottom: 8%;
+  font-size: 3.25rem;
+}
+
+.buy-new-button {
+  margin-right: 5%;
+}
+
+/*Navigation Bar*/
+
+.navbar-brandhaha{
+  font-family: "Dancing Script";
+  font-size: 2.25rem !important;
+  font-weight: bold;
+}
+
+.navbar{
+  padding: 0 0 1rem !important;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/*Download Buttons*/
+.buy-button {
+  margin: 5% 3% 5% 0;
+}
+
+/*Title Image*/
+
+.wand-image {
+  height: 500px;
+  transform: rotate(15deg);
+}

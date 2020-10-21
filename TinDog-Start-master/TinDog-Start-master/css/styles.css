@@ -48,11 +48,37 @@ body {
   font-size: 1.2rem;
 }
 
+.center-align-class {
+  text-align: center;
+}
+
+.featuresHeading {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.featuresParagraph {
+  color: #8f8f8f;
+}
+
+.font-awesome-button {
+  color: #865840;
+  font-size: 3rem;
+}
+
+.font-awesome-button:hover {
+  color: #94714f;
+}
 /*Download Buttons*/
 .buy-button {
   margin: 5% 3% 5% 0;
 }
 
+.featuresSection {
+  margin: 75px auto 0 auto !important;
+  width: 80%;
+
+}
 /*Title Image*/
 
 .wand-image {

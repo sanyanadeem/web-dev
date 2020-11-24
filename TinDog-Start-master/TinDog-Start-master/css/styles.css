@@ -3,6 +3,11 @@ body {
   font-family: "Montserrat";
 }
 
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 #title {
   background-color: #D4AF37;
   color: #fff;
@@ -75,13 +80,80 @@ body {
 }
 
 .featuresSection {
-  margin: 75px auto 0 auto !important;
+  margin: 10% auto 10% auto !important;
   width: 80%;
-
 }
 /*Title Image*/
 
 .wand-image {
   height: 500px;
   transform: rotate(15deg);
+}
+
+/*Testimonials Section*/
+#testimonials {
+  text-align: center;
+  background-color: #865840;
+  color: #fff;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/*Images*/
+.HarryPotterImage {
+  height: 100px;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.HogwartsImage {
+  height: 175px;
+}
+
+.ThreeBroomsticksImage {
+  height: 175px;
+}
+
+.DailyProphetImage {
+  height: 225px;
+}
+
+.FlourishAndBlottsImage {
+  height: 175px;
+}
+
+.McGonagallwowwwwwww {
+  height: 100px;
+  border-radius: 100%;
+}
+
+.HagridImage {
+  height: 100px;
+  border-radius: 100%;
+}
+
+
+/*Press*/
+
+#press {
+  background-color: #865840;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/*Pricing Section*/
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
 }

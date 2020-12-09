@@ -1,6 +1,6 @@
-
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
 h2 {
@@ -8,40 +8,21 @@ h2 {
   line-height: 1.5;
 }
 
-#title {
-  background-color: #D4AF37;
-  color: #fff;
-}
-
+/*/ Headings*/
 .headingDreamWand {
   font-family: 'Montserrat-Black';
   font-size: 3rem;
   line-height: 1.5;
 }
 
-.container-fluidhaha {
-  padding: 3% 15%;
-}
-
-.dream-wand {
-  margin-top: 10%;
-  margin-bottom: 8%;
-  font-size: 3.25rem;
-}
-
-.buy-new-button {
-  margin-right: 5%;
-}
-
 /*Navigation Bar*/
-
-.navbar-brandhaha{
+.navbar-brandhaha {
   font-family: "Dancing Script";
   font-size: 2.25rem !important;
   font-weight: bold;
 }
 
-.navbar{
+.navbar {
   padding: 0 0 1rem !important;
 }
 
@@ -57,11 +38,6 @@ h2 {
   text-align: center;
 }
 
-.featuresHeading {
-  font-size: 1.5rem;
-  font-weight: bolder;
-}
-
 .featuresParagraph {
   color: #8f8f8f;
 }
@@ -74,6 +50,7 @@ h2 {
 .font-awesome-button:hover {
   color: #94714f;
 }
+
 /*Download Buttons*/
 .buy-button {
   margin: 5% 3% 5% 0;
@@ -83,13 +60,34 @@ h2 {
   margin: 10% auto 10% auto !important;
   width: 80%;
 }
-/*Title Image*/
 
+/*Title Image*/
 .wand-image {
   height: 500px;
   transform: rotate(15deg);
+  position: absolute;
+  right: 30%;
 }
 
+/*Title Section*/
+#title {
+}
+
+.container-fluidhaha {
+  padding: 3% 15% 7%;
+}
+
+.dream-wand {
+  margin-top: 10%;
+  margin-bottom: 8%;
+  font-size: 3.25rem;
+}
+
+.buy-new-button {
+  margin-right: 5%;
+}
+
+/*Features Section*/
 /*Testimonials Section*/
 #testimonials {
   text-align: center;
@@ -134,9 +132,7 @@ h2 {
   border-radius: 100%;
 }
 
-
 /*Press*/
-
 #press {
   background-color: #865840;
   text-align: center;
@@ -154,6 +150,77 @@ h2 {
   text-align: center;
 }
 
+.featuresHeading {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
 .pricing-column {
   padding: 3% 2%;
+}
+
+#features {
+  padding: 7% 15%;
+  position: relative;
+}
+
+@media (max-width: 1028px) {
+  .wand-image {
+    position: static;
+    transform: rotate(0deg);
+  }
+
+  #title {
+    text-align: center;
+  }
+}
+
+/* CALL TO ACTION*/
+
+
+.FindWandOfYourDreams {
+  color: white;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/*Footer*/
+.twitter-image {
+  margin-top: 50px;
+}
+
+.facebook-image {
+  margin-left: 25px;
+}
+
+.instagram-image {
+  margin-left: 25px;
+}
+
+.envelope-image {
+  margin-left: 25px;
+}
+
+.Copyright {
+  color: grey;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#footer {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+/*Sections*/
+
+.colored-section {
+  background-color: #D4AF37;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
 }

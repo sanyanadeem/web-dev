@@ -1,3 +1,5 @@
+//userClickedPattern should reset to empty array after every level
+
 $(document).ready();
 
 var userClickedPattern = [];
@@ -18,6 +20,7 @@ function nextSequence() {
   randomChosenSound.play();
   $("#" + randomChosenColor).fadeIn();
   level = level + 1;
+  userClickedPattern = [];
 
 
 }
@@ -35,9 +38,35 @@ $(":button").click(function(e) {
   var userChosenSound = new Audio('sounds/'+ userChosenColor + '.mp3');
   console.log(userChosenColor);
   userClickedPattern.push(userChosenColor);
-  console.log(userClickedPattern);
+  console.log(userClickedPattern + " userClickedPattern");
+  console.log(gamePattern + " gamePattern");
   userChosenSound.play();
-  checkAnswer();
+
+
+  // if length of gamePattern = length of userClickedPattern
+  if (gamePattern.length == userClickedPattern.length) {
+    // if it returns true, go to the next level
+
+    if (checkAnswer() == true) {
+      setTimeout(() => {
+        nextSequence();
+      }, 1000);
+    } else {
+      new Audio('sounds/wrong.mp3').play();
+      $('body')
+        .addClass("game-over")
+        .delay(200)
+        .queue(function(next){
+          $(this).removeClass('game-over');
+          next();
+      })
+      $("#level-title").text("Game Over, Press Any Key to Restart");
+      startOver();
+
+
+    }
+
+  }
 
 })
 
@@ -61,4 +90,11 @@ function checkAnswer(currentLevel) {
   console.log("success");
   return true;
 
+}
+
+
+function startOver() {
+  level = 0;
+  gamePattern = [];
+  keyPressCount = 0;
 }

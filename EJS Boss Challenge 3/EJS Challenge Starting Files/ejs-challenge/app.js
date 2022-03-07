@@ -11,6 +11,8 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 const app = express();
 
+
+
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -45,8 +47,12 @@ app.post("/compose", function(req, res) {
 })
 
 
-
-
+app.get("/posts/:postName", function(req,res){
+  let titleArray = allPosts.map(a => a.title)
+  if (titleArray.includes(req.params.postName)) {
+    console.log("Match found!");
+  }
+});
 
 
 
